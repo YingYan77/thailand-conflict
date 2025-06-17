@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 
 % Language setting
 % Replace `english' with e.g. `spanish' to change the document language
@@ -31,7 +31,7 @@ sorting=nty
 
 \addbibresource{bibliography.bib} 
 
-\title{Prelimitary Analysis of the Relationship Between Conlifct Measures and Nightlights in Thailand}
+\title{Prelimitary Analysis of the Relationship Between Conlifct Measures and Nightlights in Thailand: Pre-Doc Evaluation Task for Wyss Academy at the University of Bern}
 \author{Ying Yan}
 
 \begin{document}
@@ -49,9 +49,7 @@ Nightlights data is widely publicly available \footnote{e.g., \href{https://worl
 \section{Asian Map}
 Figure \ref{fig:asianmap} shows conflict measures and night-lights for countries in Asia, where Figure \ref{fig:asian2020} shows the measures for the year 2020 and Figure \ref{fig:asian2010} shows the measures for the year 2010. The maps on the left show only nightlights, while the maps on the right show conflict events (red dots) in each country, overlaid on the nightlights data.
 
-By comparing the areas of conflict and nightlight intensity, it is possible to identify a negative relationship between nightlight usage and the concentration of conflict events. This negative correlation also exists consistently over time: in 2010, for example, nightlight intensity was lower and conflict intensity was higher than in 2020.
-
-\begin{figure}[ht]
+\begin{figure}[!b]
      \centering
      \begin{subfigure}[b]{0.9\textwidth}
          \centering
@@ -66,14 +64,18 @@ By comparing the areas of conflict and nightlight intensity, it is possible to i
          \caption{2010}
          \label{fig:asian2010}
     \end{subfigure}
-    \caption{Conflict Events and Nightlight Intensity in Asia. Year 2020 and 2010 comparison.}
+    \caption{Conflict Events and Nightlight Intensity in Asia. Year 2020 vs 2010.}
     \label{fig:asianmap}
 \end{figure}
+
+The countries that have suffered the most from conflicts in Asia over the past decade are Afghanistan, India, Pakistan, the Philippines and Myanmar. Thailand is sixth (see the complete figures in the Appendix). By comparing areas of conflict with night-light intensity, a negative correlation between night-light usage and the concentration of conflict events can be identified. This negative correlation has also been consistent over time: for example, in 2010, night-light intensity was lower and conflict intensity was higher than in 2020.
 
 \section{Thailand Map}
 The comparison maps specifically of Thailand for year 2010 and 2020 are illustrated in Figure \ref{fig:thailandmap}, where Figure \ref{fig:thailand2020} shows the nightlights and conflict events happened in Thailand in 2020 and Figure \ref{fig:thailand2010} shows similar data in 2010. The red dots on the right of each figure indicate the number of conflicts that have been undergone in that year. The white lines on the map are the province borders, which are obtained from \href{https://gadm.org/download_country.html#google_vignette}{GADM}. 
 
-The conflicts are concentrated in the southern provinces, whereas night-time light usage is concentrated around the capital. The map indicates similar correlations between conflict events and nightlights as in Figure \ref{fig:asianmap}. Conflicts are concentrated in areas with low night-time light usage. In 2010, there were fewer night-time lights and more conflicts than in 2020.
+The night-time light usage is concentrated around the capital, Bangkok, which is the area with the most active economic activities. The conflicts are concentrated in the southern provinces, due to the ongoing ethnic and religious separatist insurgencies in the three southernmost provinces (Southern border provinces) of Thailand, Pattani, Yala and Narathiwat from 2004 to the present (\cite{Payo01102024}). The insurgencies become more violent in early 2000s. 
+
+The map indicates similar correlations between conflict events and nightlights as in Figure \ref{fig:asianmap} - conflicts are concentrated in areas with low night-time light usage, and in 2010, there were fewer night-time lights and more conflicts than in 2020.
 
 \begin{figure}[ht]
      \centering
@@ -114,11 +116,36 @@ province & 77 &  &  &  & &  \\
 \end{table} 
 
 \section{Discussion}
-In conclusion, the preliminary analysis suggests promising avenues for future research into the relationship between night lights and conflicts. However, to establish a causal relationship, other factors affecting both nightlights and conflicts need to be taken into consideration, such as government repression actions (both online and offline), rural/urban areas and GDP in each province etc. There may also be a time effect, given that some conflicts last for several years. Therefore, more robust research methodologies need to be employed for casual reference studies, such as difference-in-difference analysis.
+In conclusion, the preliminary analysis suggests promising avenues for future research into the relationship between night lights and conflicts. However, to conduct a causal relationship analysis, other factors affecting both nightlights and conflicts need to be taken into consideration. For instance, \textcite{Payo01102024} show the conflicts in the Southern Thailand have worsened the economy in such area, and the economy plays also an important role in the nightlight activities (\cite{gibson_which_2021}). Other factors such as ethnicity/cultural, government repression actions (both online and offline), and rural/urban areas can also have an impact. There may also be a time effect, considering that some conflicts last for several years or even decades. Therefore, more robust research methodologies need to be employed for casual reference studies, such as difference-in-difference analysis.
 
 \section{Declaration of AI}
 I use AI tools and internet sources, such as books and YouTube videos, to enhance my understanding of geographical information systems and respective coding implementation in R during this task. All codes and data are available at \href{https://github.com/YingYan77/thailand-conflict}{Github Page}. 
 
 \printbibliography
+
+\counterwithin{table}{section}
+\appendix
+\section{Appendix} 
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{ccc}
+\toprule
+rank & country & conflicts\\
+\midrule
+1 & Afghanistan & 29248\\
+2 & India & 4725\\
+3 & Pakistan & 3963\\
+4 & Philippines & 1714\\
+5 & Myanmar (Burma) & 1152\\
+6 & Thailand & 913\\
+7 & Bangladesh & 135\\
+8 & Indonesia & 78\\
+9 & Tajikistan & 36\\
+10 & Kyrgyzstan & 26\\
+\bottomrule
+\end{tabular}
+    \caption{Ranking of aggregated conflicts events from 2010 to 2020 for Asian countries}
+    \label{tab:my_label}
+\end{table}
 
 \end{document}
